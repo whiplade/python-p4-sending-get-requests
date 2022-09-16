@@ -13,7 +13,6 @@
 - **Request**: an attempt by one machine to contact another over the internet.
 - **Client**: an application or machine that accesses services being provided by a server through the internet.
 - **Web Server**: a combination of software and hardware that uses Hypertext Transfer Protocol (HTTP) and other protocols to respond to requests made over the internet.
-- **More vocab to come**
 
 ***
 
@@ -175,7 +174,7 @@ print(response.content)
 Running the above in in a fresh repl session, you should see that the
 `response.content` now returns a byte string:
 
-```py
+```bash
 b'[\n  {\n    "name": "Flatiron School Manhattan",\n    "address": "11 Broadway, New York, NY 10004",\n    "coordinates": {\n      "latitude": "40.704521",\n      "longitude": "-74.012833"\n    }\n  },\n  {\n    "name": "Flatiron School Austin",\n    "address": "316 W 12th St, Austin, TX 78701",\n    "coordinates": {\n      "latitude": "30.275080",\n      "longitude": "-97.743700"\n    }\n  },\n  {\n    "name": "Flatiron School Denver",\n    "address": "3601 Walnut St 5th Floor, Denver, CO 80205",\n    "coordinates": {\n      "latitude": "39.743510",\n      "longitude": "-105.011360"\n    }\n  },\n  {\n    "name": "Flatiron School Seattle",\n    "address": "1411 4th Ave 13th Floor, Seattle, WA 98101",\n    "coordinates": {\n      "latitude": "47.684879",\n      "longitude": "-122.201363"\n    }\n  },\n  {\n    "name": "Flatiron School London",\n    "address": "131 Finsbury Pavement, Finsbury, London EC2A 1NT, UK",\n    "coordinates": {\n      "latitude": "51.520480",\n      "longitude": "-0.087190"\n    }\n  }\n]'
 ```
 
@@ -261,6 +260,12 @@ as JSON, which we can retrieve and convert into Python data structures.
 
 Having these tools unlocks access to _a lot of data_. Being able to communicate
 with remote resources is also the cornerstone of web development!
+
+## Resources
+
+- [GET - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)
+
+- [HTTP methods - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
 [`json`]: https://docs.python.org/3/library/json.html
 [uri]: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier

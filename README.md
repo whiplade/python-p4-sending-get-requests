@@ -267,6 +267,10 @@ with remote resources is also the cornerstone of web development!
 
 - [HTTP methods - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
+- [requests](https://requests.readthedocs.io/en/latest/)
+
+- [Python JSON](https://docs.python.org/3/library/json.html)
+
 [`json`]: https://docs.python.org/3/library/json.html
 [uri]: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 [url]: https://en.wikipedia.org/wiki/URL

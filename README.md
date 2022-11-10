@@ -11,8 +11,11 @@
 ## Key Vocab
 
 - **Request**: an attempt by one machine to contact another over the internet.
-- **Client**: an application or machine that accesses services being provided by a server through the internet.
-- **Web Server**: a combination of software and hardware that uses Hypertext Transfer Protocol (HTTP) and other protocols to respond to requests made over the internet.
+- **Client**: an application or machine that accesses services being provided by
+  a server through the internet.
+- **Web Server**: a combination of software and hardware that uses Hypertext
+  Transfer Protocol (HTTP) and other protocols to respond to requests made over
+  the internet.
 
 ***
 
@@ -65,6 +68,7 @@ repl. To start, once repl is open, we need to import [`requests`][]:
 
 ```py
 import requests
+
 ```
 
 If loaded correctly, we will set a URL that we
@@ -82,7 +86,6 @@ The first thing we do is pass this `url` variable into a method called `get`
 that is part of the requests module we loaded with `import 'requests'`:
 
 ```py
-
 response = requests.get(url)
 
 ```
@@ -93,6 +96,8 @@ Locator. They are a standard way to _locate_ something. **URLs also happen to
 act as a standard name** (a web address acts as both the name of the website
 _and_ the text you need to enter to visit the website). Therefore, generally
 speaking, all URLs are considered a subset of URIs (but not all URIs are URLs).
+
+***
 
 ## Reading the Body of a Response
 
@@ -141,7 +146,7 @@ request to a website.
 
 ***
 
-## Define JSON
+## Defining JSON
 
 JSON stands for JavaScript Object Notation and is a standard way store and
 transfer nested data over the internet. The keyword here is **Notation**. Data
@@ -150,7 +155,7 @@ in a way that is easily converted into usable nested data. Python has a built-in
 [`JSON`][] module that includes a `loads` method to take JSON formatted data and
 turn it into a list.
 
-## Retrieving JSON Data
+### Retrieving JSON Data
 
 Just as with the website, we write in the _Universal Resource Locator_, convert
 it to a `URI` object, then send a GET request. Previously, we sent requests to
@@ -183,12 +188,14 @@ First, we'll need to require the `json` module:
 
 ```py
 import json
+
 ```
 
 Then we pass in `response.body` to the JSON parser:
 
 ```py
 json.loads(response.content)
+
 ```
 
 The result is an list containing five dictionaries, each with some data about a
@@ -237,6 +244,7 @@ Flatiron School campus:
       }
    }
 ]
+
 ```
 
 **Aside**: If you'd like a better view of this data, You can use the json `dumps`
@@ -261,14 +269,13 @@ as JSON, which we can retrieve and convert into Python data structures.
 Having these tools unlocks access to _a lot of data_. Being able to communicate
 with remote resources is also the cornerstone of web development!
 
+***
+
 ## Resources
 
 - [GET - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)
-
 - [HTTP methods - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
-
 - [requests](https://requests.readthedocs.io/en/latest/)
-
 - [Python JSON](https://docs.python.org/3/library/json.html)
 
 [`json`]: https://docs.python.org/3/library/json.html

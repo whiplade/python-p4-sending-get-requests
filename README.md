@@ -139,8 +139,8 @@ print(response.text)
 So, we've seen how to get the HTML code from a webpage. Although this is
 cool, in its current state, this isn't very useful information. There are
 actually tools designed specifically to take this raw HTML and turn it into
-organized data for us in a process known as scraping, but we don't need to learn
-that just yet. Plenty of data is already organized and made available to us
+organized data for us in a process known as scraping, which we learned about in the previous optional module.
+Plenty of data is already organized and made available to us
 separate from HTML code and we can retrieve it the same way we send a GET
 request to a website.
 
